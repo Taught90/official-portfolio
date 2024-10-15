@@ -467,7 +467,15 @@ body {
     margin-bottom: 5px;
     transition: all .3s;
   }
+  .hire  button {
+    padding: 5px 10px;
+    margin: 0 10px;
+    width: 150px;
+  }
 
+  .hire a {
+    font-size: 20px;
+  }
   .contact a {
     margin: 0 20px;
   }
@@ -476,6 +484,7 @@ body {
     width: 30px;
   }
 }
+
 
 @media (max-width: 430px) {
   .nav .tush{
