@@ -305,7 +305,6 @@ body {
 }
 
 .hire #cv {
-  background-color: #373737;
   transition: all .3s;
   animation: color1 linear 1s;
 }
@@ -321,8 +320,7 @@ body {
   }
 }
 
-.hire #hire-me {
-  background-color: goldenrod;
+.hire #hire-me {  
   transition: all .3s;
   animation: color2 linear 1s;
 }
