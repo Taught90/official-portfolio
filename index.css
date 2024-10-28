@@ -305,35 +305,13 @@ body {
 }
 
 .hire #cv {
+  background-color: #373737;
   transition: all .3s;
-  animation: color1 linear 3s infinite;
-}
-@keyframes color1 {
-  0%{
-    background-color: #373737;
-  }
-  50%{
-    background-color: goldenrod;
-  }
-  100%{
-    background-color: #373737;
-  }
 }
 
-.hire #hire-me {  
+.hire #hire-me { 
+  background-color: goldenrod;
   transition: all .3s;
-  animation: color2 linear 3s infinite;
-}
-@keyframes color2 {
-  0%{
-    background-color: goldenrod;
-  }
-  50%{
-    background-color: #373737;
-  }
-  100%{
-    background-color: goldenrod;
-  }
 }
 
 .hire #cv:hover {
