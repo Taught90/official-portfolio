@@ -322,7 +322,7 @@ body {
 
 .hire #hire-me {  
   transition: all .3s;
-  animation: color2 linear 1s infite;
+  animation: color2 linear 1s infinite;
 }
 @keyframes color2 {
   0%{
