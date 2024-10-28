@@ -1,6 +1,41 @@
-academic_year = document.getElementById("year")
-current_date = new Date()
-academic_year.innerHTML = current_date.getFullYear() - 2021;
+// script.js
+
+const startYear = 2022;
+const maxYears = 4;
+const currentYear = new Date().getFullYear();
+
+// Function to calculate the current year of study
+function calculateCurrentYear() {
+    let yearOfStudy = 1; // Default to first year
+
+    // Calculate the number of years since starting
+    const yearsPassed = currentYear - startYear;
+
+    // Determine the current year of study
+    if (yearsPassed >= maxYears) {
+        yearOfStudy = maxYears; // Max out at 4 years
+    } else if (yearsPassed > 0) {
+        yearOfStudy = yearsPassed + 1; // Increment the year of study
+    }
+
+    return yearOfStudy;
+}
+
+// Function to update the DOM
+function updateDOM() {
+    const yearOfStudy = calculateCurrentYear();
+    document.getElementById('year').innerText = yearOfStudy;
+}
+
+// Update DOM initially
+updateDOM();
+
+// Check if it's September and update if necessary
+const today = new Date();
+if (today.getMonth() === 8 && today.getDate() === 1) {
+    updateDOM();
+}
+
 
 window.addEventListener('DOMContentLoaded', event => {
 
