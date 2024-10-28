@@ -306,7 +306,7 @@ body {
 
 .hire #cv {
   transition: all .3s;
-  animation: color1 linear 1s infinite;
+  animation: color1 linear 3s infinite;
 }
 @keyframes color1 {
   0%{
@@ -322,7 +322,7 @@ body {
 
 .hire #hire-me {  
   transition: all .3s;
-  animation: color2 linear 1s infinite;
+  animation: color2 linear 3s infinite;
 }
 @keyframes color2 {
   0%{
